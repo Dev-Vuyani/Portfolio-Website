@@ -24,4 +24,4 @@ JavaScript
 
 
 🚀 Live Demo
-[Insert link here if deployed — e.g., GitHub Pages or Netlify]
+[https://dev-vuyani-mthembu.netlify.app/]
