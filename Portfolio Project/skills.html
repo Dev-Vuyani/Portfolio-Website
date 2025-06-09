@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio.</a>
+        <ul>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="about.html"><b>About</b></a></li>
+            <li><a href="skills.html"><b>Skills</b></a></li>
+            <li><a href="projects.html"><b>Projects</b></a></li>
+            <li><a href="contact.html"><b>Contact</b></a></li>
+        </ul>
+    </nav>
+    
+    <div class="skills-container">
+        <h1 class="glowing-text">My Skills</h1>
+        <div class="skills-wrapper">
+            <!-- Technical Skills on left -->
+            <div class="tech-skills">
+                <!-- Your technical skills content -->
+                <h2>Technical Skills</h2>
+                <div class="skill">
+                    <div class="skill-header">
+                        <img src="html.jpeg" alt="HTML Icon">
+                        <span class="skill-name">HTML</span>
+                        <span class="percentage">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress html"></div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <div class="skill-header">
+                        <img src="css.jpeg" alt="CSS Icon">
+                        <span class="skill-name">CSS</span>
+                        <span class="percentage">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress css"></div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <div class="skill-header">
+                        <img src="js.jpeg" alt="JavaScript Icon">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="percentage">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress js"></div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <div class="skill-header">
+                        <img src="mysql.jpeg" alt="MySQl Icon">
+                        <span class="skill-name">MySQL</span>
+                        <span class="percentage">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress mysql"></div>
+                    </div>
+                </div>
+        
+                <div class="skill">
+                    <div class="skill-header">
+                        <img src="java.jpeg" alt="Java Icon">
+                        <span class="skill-name">Java</span>
+                        <span class="percentage">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress java"></div>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <div class="skill-header">
+                        <img src="react.jpeg" alt="React Icon">
+                        <span class="skill-name">React.js</span>
+                        <span class="percentage">70%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress react"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <img src="python.jpeg" alt="Python Icon">
+                        <span class="skill-name">Python</span>
+                        <span class="percentage">60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress python"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Soft Skills on right -->
+            <div class="soft-skills">
+    <h2>Soft Skills</h2>
+    <ul>
+        <li>Problem-solving <span class="percentage">85%</span></li>
+        <li>Teamwork & Collaboration <span class="percentage">90%</span></li>
+        <li>Critical Thinking <span class="percentage">80%</span></li>
+        <li>Adaptability & Continuous Learning <span class="percentage">88%</span></li>
+        <li>Effective Communication <span class="percentage">92%</span></li>
+    </ul>
+</div>
+        </div>
+    </div>
+
+    
+
+    
+    
+    
+    
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #1f242d;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding:  25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li:hover a, 
+.navbar ul li.active a{
+    color: #7cf03d;
+}
+.skills-container {
+    margin-top: 110px; /* Adjusted based on navbar height */
+    padding: 30px 9%; /* Match navbar's horizontal padding */
+    color: white;
+    position: relative;
+}
+.skills-container h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    text-align: center; /* Centers text inside .about-info */
+    width: 100%; /* Ensures it spans the full width */
+}
+
+.glowing-text {
+    font-size: 32px;
+    margin-top: -10px;
+    position: relative;
+    animation: glowAnimation 3s infinite alternate;
+}
+
+@keyframes glowAnimation {
+    0% {
+        text-shadow: 0 0 5px #7cf03d, 0 0 10px #7cf03d, 0 0 15px #7cf03d, 0 0 20px #7cf03d;
+    }
+    50% {
+        text-shadow: 0 0 10px #7cf03d, 0 0 20px #7cf03d, 0 0 30px #7cf03d, 0 0 40px #7cf03d;
+    }
+    100% {
+        text-shadow: 0 0 15px #7cf03d, 0 0 25px #7cf03d, 0 0 35px #7cf03d, 0 0 45px #7cf03d;
+    }
+}
+
+
+
+.skills-wrapper {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Technical skills column */
+.tech-skills {
+    flex: 1;
+    padding-right: 20px;
+}
+
+/* Soft skills column */
+.soft-skills {
+    flex: 1;
+    padding-left: 20px;
+}
+
+/* Rest of your existing skill styles remain the same */
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.skill-header img {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.skill-name {
+    font-size: 18px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.percentage {
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #444;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    background: #7cf03d;
+}
+
+/* Progress Levels */
+.html { width: 90%; }
+.css { width: 85%; }
+.js { width: 70%; }
+.mysql { width: 70%; }
+.java { width: 75%; }
+.react { width: 70%; }
+.python { width: 60%; }
+/* Section headings */
+h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-align: left;
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+}
+
+.soft-skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.soft-skills li {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid #7cf03d;
+}
+
+.soft-skills .percentage {
+    color: #7cf03d;
+    font-weight: bold;
+}
+
+
+
+ 
+</style>

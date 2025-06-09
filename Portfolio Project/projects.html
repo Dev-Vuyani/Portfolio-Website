@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+    
+        <nav class="navbar">
+            <a href="#" class="logo">Portfolio.</a>
+            <ul>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="about.html"><b>About</b></a></li>
+                <li><a href="skills.html"><b>Skills</b></a></li>
+                <li><a href="projects.html"><b>Projects</b></a></li>
+                <li><a href="contact.html"><b>Contact</b></a></li>
+            </ul>
+        </nav>
+
+        <div class="skills-container">
+    <h1 class="glowing-text">My Projects</h1>
+
+    <div class="projects-section">
+        <div class="project-card">
+            
+            <h3>Makhanyi's Fast Food</h3>
+            <img src="Makhanyi.png" alt="Project 1 Screenshot">
+            <p>A responsive fast food website inspired by Makhanyi’s Fast Food in my Kasi, showcasing menu items, community vibes, and a user-friendly design — built to sharpen my front-end development skills.</p>
+            <a href="https://github.com/Dev-Vuyani/Mkhanyi-s-Fast-Food-Website-.git" target="_blank" class="github-btn">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Personal Website</h3>
+            <img src="Website.png" alt="Project 2 Screenshot">
+            <p>A personalized website to give you a short description about myself and some of the projects i've recently worked on. Feel free to contact me!. </p>
+            <a href="https://github.com/yourusername/project2" target="_blank" class="github-btn">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Studdy-Buddy</h3>
+            <img src="Home.png" alt="Project 3 Screenshot">
+            
+            <p>Study-Buddy is a centralized academic productivity and wellness app built using Django. This project was developed as part of a research assignment to identify and address the mental load students experience from managing heavy academic responsibilities. [In Progress]</p>
+            <a href="https://github.com/Dev-Vuyani/HCI-DJANGO-Project.git" target="_blank" class="github-btn">View on GitHub</a>
+        </div>
+    </div>
+
+   
+</div>
+
+</body>
+</html>
+
+<style>
+  .skills-container {
+    margin-top: 110px; /* Adjusted based on navbar height */
+    padding: 30px 9%; /* Match navbar's horizontal padding */
+    color: white;
+    position: relative;
+}
+.skills-container h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    text-align: center; /* Centers text inside .about-info */
+    width: 100%; /* Ensures it spans the full width */
+}
+
+.glowing-text {
+    font-size: 32px;
+    margin-top: -10px;
+    position: relative;
+    animation: glowAnimation 3s infinite alternate;
+}
+
+@keyframes glowAnimation {
+    0% {
+        text-shadow: 0 0 5px #7cf03d, 0 0 10px #7cf03d, 0 0 15px #7cf03d, 0 0 20px #7cf03d;
+    }
+    50% {
+        text-shadow: 0 0 10px #7cf03d, 0 0 20px #7cf03d, 0 0 30px #7cf03d, 0 0 40px #7cf03d;
+    }
+    100% {
+        text-shadow: 0 0 15px #7cf03d, 0 0 25px #7cf03d, 0 0 35px #7cf03d, 0 0 45px #7cf03d;
+    }
+}
+.form {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #1f242d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(124, 240, 61, 0.5); /* Green glow */
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #7cf03d;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #7cf03d;
+    border: none;
+    border-radius: 5px;
+    color: #1f242d;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #7cf03d;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+}
+.projects-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.project-card {
+    background: #1f242d;
+    border-radius: 15px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(124, 240, 61, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(124, 240, 61, 0.7);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.project-card p {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+.github-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #7cf03d;
+    color: #1f242d;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 8px #7cf03d;
+}
+
+.github-btn:hover {
+    background: transparent;
+    color: #7cf03d;
+    border: 1px solid #7cf03d;
+    box-shadow: none;
+}
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(124, 240, 61, 0.6);
+    z-index: 2;
+}
+</style>

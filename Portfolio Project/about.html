@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+    
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio.</a>
+        <ul>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="about.html"><b>About</b></a></li>
+            <li><a href="skills.html"><b>Skills</b></a></li>
+            <li><a href="projects.html"><b>Projects</b></a></li>
+            <li><a href="contact.html"><b>Contact</b></a></li>
+        </ul>
+    </nav>
+
+    <section class="about">
+        <div class="about-info">
+            <h1 class="glowing-text">About Me</h1>
+            <p>
+                I am a passionate software developer with a strong interest in front-end and web development. I focus on building modern, efficient, and user-friendly applications. My goal is to combine creativity with technology to develop solutions that are both visually appealing and highly functional.  
+            </p>
+            <p>
+                I continuously learn and adapt to industry trends, integrating modern technologies to improve performance and scalability. I believe web applications should offer more than just aesthetics—they should provide a seamless user experience, smooth interactions, and easy accessibility.  
+            </p>
+            <p>
+                As a team player, I thrive in collaborative environments where innovation and problem-solving drive success. I take my tasks seriously, work diligently to deliver high-quality results, and always aim to exceed expectations. My development approach is centered around efficiency, user satisfaction, and attention to detail, ensuring every project meets its objectives while delivering an exceptional experience.  
+            </p>
+        </div>
+    
+        <div class="about-img">
+            <div class="img-box">
+                <div class="img-item">
+                   <img src="profile2.jpg" alt="Vuyani Mthembu">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #1f242d;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding:  25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li:hover a, 
+.navbar ul li.active a{
+    color: #7cf03d;
+}
+
+.about-section {
+    max-width: 80%;
+    margin: 100px auto 50px; 
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+    color: #fff;
+}
+.about {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.about-info {
+    max-width: 50%;
+}
+
+.about-info h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    text-align: center; /* Centers text inside .about-info */
+    width: 100%; /* Ensures it spans the full width */
+}
+
+.about-info p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Align image to the right, just like the Home page */
+.about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.img-box {
+    width: 380px;  /* Fixed size for consistency */
+    height: 380px;
+    background: linear-gradient(135deg, #6bffae, #000dff); /* Gradient border */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    padding: 5px; /* Space for the gradient border effect */
+}
+
+.img-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.img-item:hover {
+    transform: scale(1.15); /* Slight zoom effect on hover */
+}
+
+.img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Ensures the image stays round */
+}
+
+
+.about-section{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.glowing-text {
+    font-size: 32px;
+    margin-top: -10px;
+    position: relative;
+    animation: glowAnimation 3s infinite alternate;
+}
+
+@keyframes glowAnimation {
+    0% {
+        text-shadow: 0 0 5px #7cf03d, 0 0 10px #7cf03d, 0 0 15px #7cf03d, 0 0 20px #7cf03d;
+    }
+    50% {
+        text-shadow: 0 0 10px #7cf03d, 0 0 20px #7cf03d, 0 0 30px #7cf03d, 0 0 40px #7cf03d;
+    }
+    100% {
+        text-shadow: 0 0 15px #7cf03d, 0 0 25px #7cf03d, 0 0 35px #7cf03d, 0 0 45px #7cf03d;
+    }
+}
+</style>
+</html>

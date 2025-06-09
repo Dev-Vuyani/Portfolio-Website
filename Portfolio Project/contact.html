@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+
+    <!-- Add Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio.</a>
+        <ul>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="about.html"><b>About</b></a></li>
+            <li><a href="skills.html"><b>Skills</b></a></li>
+            <li><a href="projects.html"><b>Projects</b></a></li>
+            <li><a href="contact.html"><b>Contact</b></a></li>
+        </ul>
+    </nav>
+</head>
+
+<body>
+    <div class="contact">
+        <section class="personal">
+            <h1 class="glowing-text"><b>Contact Me Let's Connect!</b></h1>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Call Me</h3>
+                    <p>+27 61 435 4598</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Email Me</h3>
+                    <p>mthembuvuyani39@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="form">
+            <section class="contact-form">
+                <h2>Send Me a Message</h2>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="ba28f7b1-2169-4bf9-9e96-f01f7f9a1326">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Type your message" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    
+    
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #1f242d;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding:  25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li:hover a, 
+.navbar ul li.active a{
+    color: #7cf03d;
+
+}
+
+.contact {
+    margin-top: 100px; /* Space between the navbar and the contact section */
+    padding: 20px;
+    text-align: center;
+}
+
+
+.personal {
+    text-align: center;
+    color: white;
+    
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Space between the two sections */
+    margin-top: 30px;
+}
+
+.contact-item {
+    background-color: #2d2f3e; /* Background for each item */
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #7cf03d; /* Green color for the icons */
+    text-shadow: 0 0 10px #7cf03d, 0 0 20px #7cf03d, 0 0 30px #7cf03d; /* Green glowing effect */
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.contact-item i:hover {
+    text-shadow: 0 0 20px #7cf03d, 0 0 30px #7cf03d, 0 0 40px #7cf03d; /* Stronger glow on hover */
+}
+
+.contact-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contact-item p {
+    font-size: 16px;
+}
+
+.form {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #1f242d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(124, 240, 61, 0.5); /* Green glow */
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #7cf03d;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #7cf03d;
+    border: none;
+    border-radius: 5px;
+    color: #1f242d;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #7cf03d;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: none;
+}
+
+</style>
+</html>
